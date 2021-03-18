@@ -3,8 +3,8 @@ html, body {
     padding: 0;
     overflow: hidden;
     background-image: url(https://user-images.githubusercontent.com/80866714/111576941-ba549a80-87b1-11eb-98d6-f0663aaaf1fa.png);
-    background: linear-gradient(182deg, #000000, #d9d9d9);
-    background-size: 400% 400%;
+    background-color: #000000;
+   
 
     animation: colormove 12s ease infinite;
 }
