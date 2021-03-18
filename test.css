@@ -1,0 +1,126 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    background: linear-gradient(323deg, #f0f0f0, #cecece, #b7cad1);
+    background-size: 600% 600%;
+
+    animation: colormove 18s ease infinite;
+}
+
+@keyframes colormove {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+@keyframes move {
+    0% {left: 5%}
+    50% {left: 100%}
+    100% {left: 0%}
+}
+
+@keyframes move2 {
+    0% {top: 0%}
+    50% {top: 100%}
+    100% {top: 0%}
+}
+
+.light {
+    mix-blend-mode: hard-light;
+}
+
+.grad {
+    transform: rotate(90deg);
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    z-index: 10;
+    animation-name: move;
+    animation-duration: 190s;
+    animation-iteration-count: infinite;
+}
+
+.gradThin {
+    position: absolute;
+}
+
+#leftThinGrad {
+    transform: rotate(90deg);
+    left: -40%;
+    top: 0;
+    z-index: 10;
+    animation-name: move2;
+    animation-duration: 90s;
+    animation-iteration-count: infinite;
+}
+
+#middleThinGrad {
+    transform: rotate(90deg);
+    left: 0%;
+    top: 0;
+    z-index: 0;
+    animation-name: move2;
+    animation-duration: 90s;
+    animation-iteration-count: infinite;
+}
+
+
+
+#rightThinGrad {
+    transform: rotate(90deg);
+    left: 60%;
+    top: 0;
+    z-index: 0;
+    animation-name: move2;
+    animation-duration: 90s;
+    animation-iteration-count: infinite;
+}
+
+#topThinGrad {
+    top: -15%;
+    left: 0;
+    z-index: 10;
+    animation-name: move2;
+    animation-duration: 130s;
+    animation-iteration-count: infinite;
+}
+
+.house {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    width: 70%;
+}
+
+#textWrapper {
+    position: absolute;
+    text-align: justify;
+    width: 12%;
+    height: 40%;
+    top: 10%;
+    right: 5%;
+}
+
+.text {
+    background-image: linear-gradient(to right, white,  #98b7c8, #98b7c8, white);
+    color: white;
+    mix-blend-mode: luminosity;
+}
+
+.tex {
+    position: absolute;
+    bottom: 0%;
+    right: 5%;
+    z-index: 99;
+    width: 90%;
+    mix-blend-mode: soft-light;
+
+}
