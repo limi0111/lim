@@ -4,15 +4,8 @@ html, body {
     overflow: hidden;
     background-image: url(https://user-images.githubusercontent.com/80866714/111576941-ba549a80-87b1-11eb-98d6-f0663aaaf1fa.png);
     background-color: #000000;
-   
-
-    animation: colormove 12s ease infinite;
 }
 
-@keyframes colormove {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
 }
 
 .wrapper {
