@@ -93,9 +93,9 @@ html, body {
     animation-iteration-count: infinite;
 }
 
-.house {
+.main {
     position: absolute;
-    top: 10%;
+    top: 1%;
     left: 15%;
     width: 70%;
 }
