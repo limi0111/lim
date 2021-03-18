@@ -3,10 +3,10 @@ html, body {
     padding: 0;
     overflow: hidden;
     background-image: url(https://user-images.githubusercontent.com/80866714/111576941-ba549a80-87b1-11eb-98d6-f0663aaaf1fa.png);
-    background: linear-gradient(323deg, #f0f0f0, #cecece, #b7cad1);
-    background-size: 600% 600%;
+    background: linear-gradient(182deg, #000000, #d9d9d9);
+    background-size: 400% 400%;
 
-    animation: colormove 18s ease infinite;
+    animation: colormove 12s ease infinite;
 }
 
 @keyframes colormove {
