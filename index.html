@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" href="test.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <img class="house" src="img/house.png">
+    <img id="leftThinGrad" class="light gradThin" src="img/pixel2.png">
+    <img id="middleThinGrad" class="light gradThin" src="img/pixel3.png">
+    <img id="rightThinGrad" class="light gradThin" src="img/pixel4.png">
+    <img id="topThinGrad" class="light gradThin" src="img/pixel5.png">
+    <img class="light grad" src="img/pixel2.png">
+    
+</div>
+
+<div id="textWrapper" class="wrapper2">
+    <div class="text">He gazes at the scene of cattle grazing in fields beyond the frame and they appear to him as if they are painted upon the glass in front of him rather than seen through it. Condensed onto the pane of glass in front of you just like how images fix upon the screen, an event recognized through the glass becomes an image.</div>
+    <div class="text">The Villagers in common chase
+        Their Cattle, which it closer raze;
+        And what below the Scythe increased
+        Is pinched yet nearer by the Beast.
+        Such, in the painted World, appeared
+        D’Avenant with th’Universal Herd.
+        They seem within the polished Grass
+        A landscape drawn in Looking-Glass.
+        And shrunk in the huge Pasture show
+        As spots, so shaped, on Faces do.
+        Such Fleas, ere they approach the Eye,
+        In Multiplying Glasses lie.
+        They feed so wide, so slowly move,
+        As Constellations do above.
+        (Marvel, 1651, verse lvii – lviii)
+        </div>
+</div>
+
+
+</body>
+
+<script>
+    let imgBank = ['img/house.png', 'img/house2.png', 'img/house3.png', 'img/house4.png', 'img/house5.png']
+    let clickCount = 0;
+
+    $('.house').click(function(){
+        clickCount = clickCount + 1;
+        console.log(clickCount);
+        if(clickCount > 4){
+            clickCount = 0;
+        }
+        else;
+        
+        $(this).attr('src', imgBank[clickCount]);
+    })
+</script>
+
+</html>
