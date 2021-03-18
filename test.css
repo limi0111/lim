@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-
+    background-image: url(https://user-images.githubusercontent.com/80866714/111571067-6abca180-87a6-11eb-9a6f-1c3dd9e33f6a.png);
     background: linear-gradient(323deg, #f0f0f0, #cecece, #b7cad1);
     background-size: 600% 600%;
 
